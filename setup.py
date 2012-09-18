@@ -7,6 +7,7 @@ setup(
     description = 'Python Ebook Reader/Extractor - Only support epub format for now',
     author='Ibrahim Diop',
     author_email='ibrahim@zinaria.com',
+    download_url='https://github.com/diopib/pyebook/raw/master/dist/pyebook-1.0.tar.gz',
     license= """Copyright (c) 2012 Ibrahim Diop
 				Permission is hereby granted, free of charge, to any person 
 				obtaining a copy of this software and associated documentation 
@@ -28,15 +29,15 @@ setup(
 				ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
 				USE OR OTHER DEALINGS IN THE SOFTWARE.""",
 	url = "https://github.com/diopib/pyebook",
+	requires = ['BeautifulSoup(>=3.2.1)'],
     classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Development Status :: 4 - Beta",
         "Environment :: Other Environment",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License (MIT):",
+        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Libraries :: Python Modules",
-        "Topic :: Text Processing :: Book :: Ebook",
         ],
 )
