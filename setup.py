@@ -29,7 +29,7 @@ setup(
 				ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
 				USE OR OTHER DEALINGS IN THE SOFTWARE.""",
 	url = "https://github.com/diopib/pyebook",
-	requires = ['BeautifulSoup(>=3.2.1)'],
+	requires = ['beautifulsoup4'],
     classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
