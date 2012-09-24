@@ -56,5 +56,6 @@ class Book:
 			content_soup = bs(self.book_file.read(rel_path+c.get('src')))
 			self.content.append({ 'part_name': c.text, 
 						  'source_url': c.get('src'), 
-						  'content_source': content_soup, 
+						  'content_source': content_soup,
+						  'content_source_body': content_soup.body,	
 						  'content_source_text': content_soup.body.text})
