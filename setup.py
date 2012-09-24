@@ -3,11 +3,11 @@ from distutils.core import setup
 setup(
     name = 'pyebook',
     packages = ['pyebook'],
-    version = '0.1',
+    version = '0.2',
     description = 'Python Ebook Reader/Extractor - Only support epub format for now',
     author='Ibrahim Diop',
     author_email='ibrahim@zinaria.com',
-    download_url='https://github.com/diopib/pyebook/raw/master/dist/pyebook-0.1.tar.gz',
+    download_url='https://github.com/diopib/pyebook/raw/master/dist/pyebook-0.2.tar.gz',
     license= """Copyright (c) 2012 Ibrahim Diop
 Permission is hereby granted, free of charge, to any person 
 obtaining a copy of this software and associated documentation 
