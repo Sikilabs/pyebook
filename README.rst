@@ -5,7 +5,7 @@ pyebook
 About
 -----
 pyebook extract content and meta informations on ebook files. It relies on the
-.epub starndards by the idpf_ 
+.epub standards by the idpf_
 
 .. _idpf: http://idpf.org/epub
 
@@ -23,7 +23,7 @@ from easy_install::
 
 Requirements
 ------------
-pyebook requires beautifulsoup4_ (>=4.1.3). 
+pyebook requires beautifulsoup4_ .
 
 .. _beautifulsoup4: http://pypi.python.org/pypi/beautifulsoup4
 
