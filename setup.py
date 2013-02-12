@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name = 'pyebook',
     packages = ['pyebook'],
-    version = '1.1',
+    version = '1.11',
     description = 'Python Ebook Reader/Extractor - Only support epub format',
     author='Ibrahim Diop',
     author_email='ibrahim@zinaria.com',
@@ -29,7 +29,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
 USE OR OTHER DEALINGS IN THE SOFTWARE.""",
     url = "https://github.com/diopib/pyebook",
-    requires = ['beautifulsoup4'],
+    install_requires = ['beautifulsoup4'],
     classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
