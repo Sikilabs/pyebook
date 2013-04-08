@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Pyebook by diopib</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Pyebook</h1>
+        <p>Python Ebook Reader/Extractor - Only support epub format for now</p>
+
+        <p class="view"><a href="https://github.com/diopib/pyebook">View the Project on GitHub <small>diopib/pyebook</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/diopib/pyebook/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/diopib/pyebook/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/diopib/pyebook">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>pyebook</h1>
+
+<h2>About</h2>
+
+<p>pyebook extract content and meta informations on ebook files. It relies on the
+.epub standards by the <a href="http://idpf.org/epub">idpdf</a></p>
+
+<h2>Installation</h2>
+
+<p>from pip::</p>
+
+<pre><code>pip install --upgrade pyebook
+</code></pre>
+
+<p>from easy_install::</p>
+
+<pre><code>easy_install -ZU pyebook
+</code></pre>
+
+<h2>Requirements</h2>
+
+<p>pyebook requires <a href="http://pypi.python.org/pypi/beautifulsoup4">beautifulsoup4</a></p>
+
+<h2>Usage</h2>
+
+<p>Import::</p>
+
+<pre><code>from pyebook.pyebook import Book
+</code></pre>
+
+<p>Initialize the book object::</p>
+
+<pre><code>my_book = Book('my_ebook_file.epub')
+</code></pre>
+
+<p>Return the book metadata::</p>
+
+<pre><code>my_book.metadata
+</code></pre>
+
+<p>Load the book content::</p>
+
+<pre><code>my_book.load_content()
+</code></pre>
+
+<p>Return the book content::</p>
+
+<pre><code>my_book.content
+</code></pre>
+
+<p>All the returned objects are dictionaries or dictionaries list like::</p>
+
+<pre><code># metadata
+{
+    'date': &lt;publication date&gt;, 
+    'identifier': &lt;book identifier (generally the ISBN)&gt;, 
+    'creator': &lt;book author&gt;, 
+    'language': &lt;book language&gt;, 
+    'title': &lt;book title&gt;'
+}
+
+# content (list of dictionaries)
+[
+  { 
+    'part_name': &lt;book part name&gt;, 
+    'source_url': &lt;book part file url&gt;, 
+    'content_source': &lt;book part html source code&gt;, 
+    'content_source_text': &lt;book part content&gt;
+  }
+]
+</code></pre>
+
+<h2>Links</h2>
+
+<ul>
+<li><a href="http://pypi.python.org/pypi/pyebook/">PyPI</a></li>
+<li><a href="https://github.com/diopib/pyebook">GitHub</a></li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/diopib">diopib</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
